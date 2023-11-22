@@ -11,6 +11,7 @@ def classifier_():
     form = None
     parametros = {}
     
+    # Verifica o tipo de classificador e define o formulário correspondente
     if classifier == 'KNN':
         form = KNNForm(request.form)
         if form.validate_on_submit():
